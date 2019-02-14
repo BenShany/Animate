@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>זוג משמיים</title>
+    <meta name="description" content="זוג משמיים" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="images/gameLogo.png"/> <!--הלוגו של המשחק שלכם-->
+                <p>זוג משמיים</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <h1>זוג משמיים</h1>
+            <p>
+                אפיון ופיתוח: סתו לחייני ובן שני
+                <br />
+                <br />
+                המשחק פותח כפרויקט משותף בקורסים
+                <br />
+                סביבות לימוד אינטראקטיביות 1 & אנימציה, תשע"ט
+                <br />
+                <br />
+                <img id="hitLogo" src="images/hitLogo.png" />
+                <div id="textlogo">
+                    <a href="http://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+                    <br />
+                    המכון הטכנולוגי חולון
+                </div>
+            </p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>
+                עליכם לעזור לג'ק להשקות את הצמח כדי שיוכל להגיע לחברתו.
+                <br />
+                <br />
+                כדי להשקות את הצמח, יש לגרור אליו את המשפך שלצד התשובה שבחרתם.
+                <br />
+                <br />
+                שימו לב - קיימת הגבלת זמן על כל שאלה.
+                <br />
+                <br />
+                בהצלחה!
+            </p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="LovebirdsStavBen.html " frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
